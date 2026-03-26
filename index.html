@@ -893,13 +893,20 @@ git push -u origin main</pre>
     saveState();
   }
 
+  let wasComplete = false;
+
   function updateProgress() {
     const done = document.querySelectorAll('.step.completed').length;
     const pct = Math.round((done / TOTAL) * 100);
     document.getElementById('progressFill').style.width = pct + '%';
     document.getElementById('progressText').textContent = done + ' / ' + TOTAL + ' done';
     document.getElementById('doneBanner').style.display = done >= TOTAL ? 'block' : 'none';
-    if (done >= TOTAL) launchDucks();
+    if (done >= TOTAL && !wasComplete) {
+      wasComplete = true;
+      launchDucks();
+    } else if (done < TOTAL) {
+      wasComplete = false;
+    }
   }
 
   /* ── Duck Confetti ─────────────────────────────── */
