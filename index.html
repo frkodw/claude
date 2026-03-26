@@ -496,8 +496,24 @@
           </div>
         </div>
         <div class="step-body">
-          <p>Take a screenshot of Claude's user journey output and paste it into the shared Figma Design file.</p>
+          <p>Take a screenshot of Claude's user journey output and paste it into the shared Figma Design file. Label it <strong>user journey</strong>.</p>
           <a class="action-link" href="https://www.figma.com/design/nvxPUQuFLYUVw8qPIkjB53/Claude-Excercise----Output?node-id=0-1&t=LgvcQ31189toBrMv-1" target="_blank">↗ Open Figma Output File</a>
+        </div>
+      </div>
+
+      <div class="step" id="step-share-1">
+        <div class="step-top" onclick="toggleStep('step-share-1')">
+          <div class="step-num">⏱</div>
+          <div class="step-label">
+            <strong>Share time</strong>
+            <span class="sub">Show the group what you've made</span>
+          </div>
+          <div class="step-actions">
+            <span class="chevron">▼</span>
+          </div>
+        </div>
+        <div class="step-body">
+          <p>Take a moment to share your user journey with the rest of the group. Show your output in the Figma file.</p>
         </div>
       </div>
 
@@ -673,8 +689,15 @@
           <div class="prompt-box">
             <div class="prompt-label">Prompt to copy</div>
             <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-            <pre>Use wireframes to create a pixel perfect design using the design system files in the project knowledge</pre>
+            <pre>Use your new wireframe to create a pixel perfect design using the design system files in the project knowledge</pre>
           </div>
+          <p>Or, if you have a Figma frame to reference, use this prompt instead (paste in your Figma selection link):</p>
+          <div class="prompt-box">
+            <div class="prompt-label">Alternative prompt</div>
+            <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            <pre>Help me create a production ready visual design using this figma design: INSERT YOUR LINK and the design style guides in the knowledge of this project (token.css and components.css)</pre>
+          </div>
+          <div class="tip-box">Tip: When referencing a Figma design, insert the URL to the selection link of the frame — right-click a frame in Figma → Copy link to selection.</div>
         </div>
       </div>
 
@@ -710,6 +733,22 @@
         <div class="step-body">
           <p>Take screenshots of both your wireframes and the final styled designs. Paste them into the shared Figma Design file and label them <strong>Before</strong> and <strong>After</strong>.</p>
           <a class="action-link" href="https://www.figma.com/design/nvxPUQuFLYUVw8qPIkjB53/Claude-Excercise----Output?node-id=0-1&t=LgvcQ31189toBrMv-1" target="_blank">↗ Open Figma Output File</a>
+        </div>
+      </div>
+
+      <div class="step" id="step-share-3">
+        <div class="step-top" onclick="toggleStep('step-share-3')">
+          <div class="step-num">⏱</div>
+          <div class="step-label">
+            <strong>Share time</strong>
+            <span class="sub">Show the group your before &amp; after</span>
+          </div>
+          <div class="step-actions">
+            <span class="chevron">▼</span>
+          </div>
+        </div>
+        <div class="step-body">
+          <p>Share your before &amp; after screens with the group. Show the difference between your wireframe and the pixel-perfect design.</p>
         </div>
       </div>
 
